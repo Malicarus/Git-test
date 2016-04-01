@@ -1,0 +1,1 @@
+This repo is meant to be used for practice with git, such as commiting files and pushing code.
