@@ -9,6 +9,8 @@ using namespace std;
 
 int sum(int value);
 
+int product(int value);
+
 int main()
 {
   int n;
@@ -19,7 +21,13 @@ int main()
   cout << "Enter a number: ";
   cin >> n;
 
-  cout << sum(n) << endl;
+  cout << "The sum of the previous integers and your number is: " << sum(n) << endl;
+
+  cout << endl;
+
+  cout << "The product of the previous integers and your number is: " << product(n) << endl;
+
+  cout << endl;
 
   return 0;
 
@@ -33,6 +41,18 @@ int sum(int value)
   for(int i = 1; i <= value; i++)
     {
       total += i;
+    }
+
+  return total;
+}
+
+int product(int value)
+{
+  int total = 1;
+
+  for(int i = 1; i <= value; i++)
+    {
+      total *= i;
     }
 
   return total;
